@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Poo by izabely-furtado</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/izabely-furtado/POO">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Poo</h1>
+            <h2>AnaliseOO-ClinicaMedica</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/izabely-furtado/POO/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/izabely-furtado/POO/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p><img src="http://3.bp.blogspot.com/-KuiNko3tqbo/VfOKqQTpXuI/AAAAAAAAGxs/AfCTaA7-950/s1600/diagrammClass.png" alt="Diagrama"></p><div>
+</div>
+
+<div>
+<br>
+</div>
+<div>
+<table border="1" cellpadding="0" cellspacing="0">
+ <tbody>
+<tr>
+  <td valign="top" width="102">
+<div>
+<b>Classe<p></p></b>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+<b>Explicação<p></p></b>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Clínica<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+A classe clinica cria, controla e armazena
+  os dados referentes as consultas, aos médicos, aos pacientes, as
+  especialidades em que os médicos abrangem (e por consequência, a clínica
+  também), além dos planos de saúde vinculados. <p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Consulta<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Relação
+  direta entre o médico e o paciente, assim esta classe referencia ambos, a
+  data e a hora em que ocorreu a consulta, as observações levantadas pelo
+  médico diante da consulta e observações feitas anteriormente para que o
+  médico possa consultar o que lhe for necessário.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Paciente<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Esta classe indica os dados do paciente,
+  estes sendo nome, telefone, data de nascimento, profissão e endereço.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Médico<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Esta classe
+  indica os dados do médico, estes sendo nome, telefone, código referente ao
+  CRM, endereço, suas especialidades e os planos de saúde aos qual esta
+  vinculada, além de informar os dias e horários da semana aos quais está disponível
+  para atendimento.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Especialidade<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+A classe indica os atributos referentes à
+  especialidade, sendo estes, nome e código do CRM.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Atendimento<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Esta classe
+  indica, para cada um dos dias da semana, os horários aos quais os médicos estarão
+  disponíveis para atendimento.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Dia Semana<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Esta classe é estereotipada como um &lt;&lt;enum&gt;&gt;
+  que referencia os dias da semana.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Plano Saúde<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Está classe
+  armazena guarda os dados referentes aos planos de saúde vinculados com a
+  clínica e/ou com os médicos.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Observação<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Esta é uma classe abstrata que referencia todo
+  os 3 tipos de observações registradas pelo médico, podendo estas ser: textos
+  a respeito das queixas do paciente, textos sobre as prescrições de
+  medicamentos e exames solicitados e textos sobre resultados dos exames e
+  respostas ao tratamento efetuado<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Queixa<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Classe que estende
+  a classe Observação, sendo assim, esta é um tipo de observação que retorna
+  textos a respeito de cada queixa do paciente.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Exames<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Classe que estende a classe Observação,
+  sendo assim, esta é um tipo de observação que retorna textos a respeito de
+  cada exame solicitado pelo médico ao qual o paciente tenha se submetido.<p></p>
+</div>
+</td>
+ </tr>
+<tr>
+  <td valign="top" width="102">
+<div>
+Prescrição<p></p>
+</div>
+</td>
+  <td valign="top" width="475">
+<div>
+Classe que estende
+  a classe Observação, sendo assim, esta é um tipo de observação que retorna
+  textos sobre cara prescrição de medicamento feita pelo médico para o paciente.<p></p>
+</div>
+</td>
+ </tr>
+</tbody>
+</table>
+</div>
+
+<p><img src="http://3.bp.blogspot.com/-KuiNko3tqbo/VfOKqQTpXuI/AAAAAAAAGxs/AfCTaA7-950/s1600/diagrammClass.png" alt="DiagrammClass"></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/izabely-furtado">izabely-furtado</a> can be found on <a href="https://github.com/izabely-furtado/POO">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("izabely");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
